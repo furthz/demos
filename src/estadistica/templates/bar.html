@@ -1,0 +1,114 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>SOA PROFESSIONALS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset='utf-8'/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen"/>
+  <link href="{% static 'css/sidebar.css' %}" rel="stylesheet" media="screen"/>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" media="screen"/>
+  <link href="{% static 'css/datos.css' %}" rel="stylesheet" media="screen"/>
+</head>
+<body hoe-navigation-type="vertical-compact" hoe-nav-placement="left" theme-layout="wide-layout" theme-bg="bg1">
+<div id="hoeapp-wrapper" class="hoe-hide-lpanel" hoe-device-type="desktop">
+  <header id="hoe-header" hoe-lpanel-effect="shrink">
+    <span class="hoe-sidebar-toggle"><a href="#"></a></span>
+  </header>
+  <div id="hoeapp-container" hoe-color-type="lpanel-bg2" hoe-lpanel-effect="shrink">
+    <aside id="hoe-left-panel" hoe-position-type="absolute">
+      <div class="container-logo">
+        <div class="media-logo">
+          <!--<img class="img-logo " src="img/soa-prooo.png">-->
+        </div>
+      </div>
+      <div class="profile-box">
+        <div class="media">
+          <div class="media-body">
+            <img class="img-logo" src="{% static 'img/soa-pro.png' %}">
+          </div>
+        </div>
+      </div>
+      <!--<div class="profile-box">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="img-circle " src="img/account.png">
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading">Bienvenido
+              <span>Rodriguez</span></h5>
+            <small>Desarrollador OGTI</small>
+          </div>
+        </div>
+      </div>-->
+      <ul class="nav panel-list">
+        <li class="active">
+          <a href="{%  url 'index' %}">
+            <i class="fa fa-files-o"></i>
+            <span class="menu-text">Inicio</span>
+            <span class="selected"></span>
+          </a>
+        </li>
+        <li class="#">
+          <a href="{%  url 'bar' %}">
+            <i class="fa fa-envelope-o"></i>
+            <span class="menu-text">Gráfico de Barras</span>
+            <span class="selected"></span>
+          </a>
+        </li>
+        <li class="#">
+          <a href="javascript:void(0)">
+            <i class="fa fa-pencil-square-o"></i>
+            <span class="menu-text">Gráfico Circular</span>
+            <span class="selected"></span>
+          </a>
+        </li>
+        <li class="#">
+          <a href="javascript:void(0)">
+            <i class="fa fa-binoculars"></i>
+            <span class="menu-text">Trending</span>
+            <span class="selected"></span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section id="main-content">
+      <div id="wrapper">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="bg">
+                 <div id='myChart'></div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- Jquery -->
+<script src="{% static 'vendor/jquery/js/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/sidebar.js' %}"></script>
+<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+<script>
+    var myConfig = {
+        "type":"bar",
+        "csv":{
+            "url":"{% static 'csv/estadistica.csv' %}",
+            "vertical-labels":true
+        }
+    };
+
+    zingchart.render({
+        id : 'myChart',
+        data : myConfig,
+        height: "100%",
+        width: "100%"
+    });
+</script>
+</body>

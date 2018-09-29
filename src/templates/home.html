@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Inicio{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="home" %}
+{% endblock %}
+
+{% block navbar-right %}
+  {% if not user.is_authenticated %}
+<a class="btn btn-default" href="{% url 'accounts:login' %}" role="button">Log in</a>
+<!--<a class="btn btn-primary" href="{% url 'accounts:signup' %}" role="button">Sign up</a>-->
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
+{% block splash %}
+
+{% endblock splash %}
+
+{% block container %}
+
+    <!-- BANNER PRINCIPAL -->
+			<section id="banner">
+				<div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="panel-welcome">
+                                    <h1>Acerca de nosotros</h1>
+                                    <p>
+                                        Empresa de Tecnología enfocada en la gestión de las comunicaciones y como la Inteligencia Artificial puede ayudar a las empresas.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a href="#one" class="button scrolly">Conoce nuestro producto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--<img class="img-responsive" src="{% static 'site/img/phone.png' %}">-->
+                            </div>
+                        </div>
+
+                    </div>
+				</div>
+			</section>
+
+    <!-- SECCION UNO -->
+<!--
+			<section id="one" class="wrapper">
+                <div class="title">
+                    <h2>Especialistas en tecnología educativa</h2>
+                </div>
+				<div class="inner flex flex-3">
+					<div class="flex-item left">
+						<div>
+							<h3>Super fácil de usar</h3>
+							<p>Interfaz gráfica amigable, moderna e intuitiva, para un manejo rápido de tus procesos.</p>
+						</div>
+						<div>
+							<h3>Reducción de tiempos y costos</h3>
+                            <p>Generé estadísticas, cálculos, promedios, reportes académicos de la manera más sencilla y rápida.</p>
+
+						</div>
+					</div>
+					<div class="flex-item image fit round">
+						<img class="img-responsive" src="{% static 'site/img/laptop_app.png' %}" alt="Apps" />
+					</div>
+					<div class="flex-item right">
+						<div>
+							<h3>Soporte 24/7 siempre</h3>
+							<p>Soporte Técnico 24/7, todos los usuarios acceden a información útil actualizada al momento para el manejo de los módulos.</p>
+						</div>
+						<div>
+							<h3>No requiere inversión adicional</h3>
+                            <p>No requiere de software o hardware adicional ya que nuestra plataforma utiliza los servicios cloud (Amazón, Azure)</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			-->
+    <!-- SECCION DOS -->
+
+<!--
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<h2>Integra a toda la comunidad educativa en un sola APP</h2>
+					<figure>
+					    <blockquote>
+					        Brindamos soluciones tecnológicas en el campo educativo, permitiendo mejorar y agilizar los procesos administrativos y pedagógicos de tu institución educativa.
+Todo esto a través de nuestro módulo de gestión de facturación, Académico, Agenda Escolar, reportes de asistencias y pagos de pensión, calendario y horarios académicos, entre otros.
+
+					    </blockquote>
+					    <div class="text-center">
+                            <img class="img-responsive" src="{% static 'site/img/app_movil.png' %}">
+                        </div>
+                        <div class="data-center">
+                            Mundo Pixel S.A.C garantiza su confianza y seguridad al estar hospedado en
+                            los mejores servidores del mercado, como lo son Amazon y Microsoft Azure.
+                            <div class="server">
+                                <img src="{% static 'site/img/logo_amazon.png' %}">
+                                <img src="{% static 'site/img/logo_azure.png' %}">
+                            </div>
+                        </div>
+					</figure>
+				</div>
+			</section>
+			-->
+    <!-- SECCION TRES -->
+			<section id="three" class="wrapper">
+				<div class="inner flex flex-3">
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="{% static 'site/img/responsive-website-designers.jpg' %}" alt="CCM" />
+						</div>
+						<div class="content">
+							<h3>PoC CCM</h3>
+							<p>Conozca los beneficios que pueda encontrar en el uso de CCM en su empresa, llegué de una
+								mejor manera a sus clientes comunicando más efectivamente.</p>
+						</div>
+
+						<ul>
+							<li><a href="http://demos.soapros.pe/poc/claro/">PoC Claro</a></li>
+
+							<li><a href="http://demos.soapros.pe/poc/vivo/" >PoC Vivo</a></li>
+
+							<li><a href="http://demos.soapros.pe/poc/tim/">PoC Tim</a></li>
+
+                            <li><a href="http://demos.soapros.pe/estadistica/demo/">Control Clicks Recibo </a> </li>
+						</ul>
+
+					</div>
+					<!--
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="{% static 'site/img/agenda.jpg' %}" alt="IA" />
+						</div>
+						<div class="content">
+							<h3>PoC IA</h3>
+							<p>Mire lo que la IA artificial puede darle a su negocio, anticipese a los hechos,
+							encuentre nuevas formas de explotar toda la información con la que cuenta</p>
+						</div>
+					</div>
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="{% static 'site/img/banner3.jpg' %}" alt="Otros" />
+						</div>
+						<div class="content">
+							<h3>Otras PoC</h3>
+							<p>Otros desarrollos que muestran como la tecnología es un facilitador</p>
+						</div>
+					</div>
+					-->
+				</div>
+			</section>
+{% endblock container %}
+
+{% block scripts %}
+<script src="{% static 'site/js/site.js' %}"></script>
+{% endblock scripts %}
+

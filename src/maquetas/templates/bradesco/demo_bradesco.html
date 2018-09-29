@@ -1,0 +1,692 @@
+{% load staticfiles %}
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bradesco</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+<style type="text/css">
+
+					body{
+					font-family: 'Patua One', cursive;
+					}
+					.container{
+					width: 50%;
+					padding: 0px !IMPORTANT;
+					margin: 0px auto;
+					margin-top: -100px;
+					}
+					#logos{
+					margin-top: 100px;
+					border: 1px solid #D92031;
+					}
+					#presentacion{
+					height: 115px;
+					background:#D92031;
+					border: 1px solid #D92031;
+					}
+					#presentacion hr{
+					margin-bottom:0px;
+					margin-top:0px;
+					}
+					#presentacionParrafo1{
+					font-size:45px;
+					color:white;
+					}
+					#presentacionParrafo2{
+					margin-top:6px;
+					margin-left:460px;
+					font-size:15px;
+					color:white;
+					font-style: italic;
+					}
+					#datosPersonales{
+					font-size:45px;
+					color:#D92031;
+					border: 1px solid #D92031;
+					}
+					#datosPersonalesParrafo{
+					text-align: center;
+					font-size:35px;
+					}
+					#datosPersonalesParrafo2{
+					text-align: center;
+					font-size:20px;
+					color:white;
+					background:#D92031;
+					}
+					#apolice tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#apolice2 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#SeguradoProponte tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#SeguradoProponte2 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#SeguradoProponte3 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#SeguradoProponte4 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#corretor tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#corretor2 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#corretor3 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#corretor4 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					#corretor5 tr td p:nth-child(1){
+					color:#D92031;
+					}
+					.table{
+					margin-bottom:0px;
+					}
+					.table tbody tr td {
+					padding: 2px;
+					}
+					.table p{
+					margin: 0px 0px 0px 0px;
+					}
+					#video{
+					height: 50%;
+					background: green;
+					}
+					#publicidadSancor{
+					height: 20%;
+					}
+					#imagen{
+					width: 350px;
+					}
+					#menu{
+					width: 130px;
+					background-color: #EE9D13;
+					float: left;
+					position: fixed;
+					top: 0;
+					transform: translateX(-120%);
+					}
+					.botonSeleccionado {
+					background-color: #D92031;
+					color: white;
+					border: 0.1px solid grey;
+					text-align: center;
+					text-decoration: none;
+					cursor: pointer;
+					width: 100%;
+					height: 67px;
+					}
+					.botonNoSeleccionado{
+					background-color: #F2F4F4;
+					border: 0.1px solid grey;
+					text-align: center;
+					text-decoration: none;
+					cursor: pointer;
+					width: 100%;
+					height: 67px;
+					}
+					#bienvenida{
+					margin-top:100px;
+					display:none;
+					}
+					#poliza{
+					margin-top:100px;
+					display:none;
+					}
+					#tarjetaAutomotor{
+					margin-top:100px;
+					display:none;
+					}
+					#contactanos{
+					margin-top:100px;
+					display:none;
+					}
+					.glyphicon {
+					font-size: 40px !IMPORTANT;
+					}
+					.tableContacto tbody tr td{
+					border-top: 0px;
+					border-right: 1px ridge #eee;
+					width:33.3%;
+					}
+					.tableContacto tbody tr td p{
+					margin: 0 0 10px;
+					}
+
+</style>
+</head>
+<body>
+<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+<span class="skype-button bubble " data-bot-id="9bf561e8-c25f-46fa-9e37-6323801218c2"></span>
+
+<a class="btn btn-danger" href="http://soapros.pe" target="_blank" role="button" id="pagar-fijo" style="position: fixed; right: 210px; top: 10px; z-index: 999; padding: 1rem 1.8rem;">Desenvolvido por SOAPros</a>
+<a class="" href="http://www.opentext.com" target="_blank" role="button" id="pagar-fijo" style="position: fixed; right: 10px; top: 10px;"><img src="/static/demos/Vivo/img/opentext.png" style="width: 160px" alt="OpenText"></a>
+<div class="container">
+<div id="menu">
+<button id="btnGeneral" onclick="General()" class="botonSeleccionado">Início</button><button id="btnCartaBienvenida" onclick="cartabienvenida()" class="botonNoSeleccionado">Carta de boas vindas</button><button id="btnPoliza" onclick="poliza()" class="botonNoSeleccionado">Apólice</button><button id="btnCartaVerde" onclick="cartaVerde()" class="botonNoSeleccionado">Carteirinha do motorista</button><button id="btnContactanos" onclick="contactanos()" class="botonNoSeleccionado">
+Contato</button><button id="btnConsultas" onclick="consultas()" class="botonNoSeleccionado">Tire suas dúvidas</button>
+</div>
+<div id="general">
+<div class="row">
+<div  id="logos">
+<img id="imagen" class="img-responsive" src="{% static 'demos/Bradesco/img/LogoBradescoSeguros2018.png' %}"></div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="presentacion">
+<div id="contenedorBlanco">
+<div>
+<p id="presentacionParrafo1">Seja bem-vinda: Verônica</p>
+</div>
+<hr>
+<div>
+<p id="presentacionParrafo2">Tudo bem. Tudo seguro.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div id="player" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 videoAutoPlay"></div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="datosPersonales">
+<div>
+<p id="datosPersonalesParrafo">Verifique seus dados</p>
+</div>
+<div>
+<p id="datosPersonalesParrafo2">Ap&oacute;lice</p>
+</div>
+<table id="apolice" class="table">
+<tr>
+<td>
+<p>Ramo</p>
+</td><td>
+<p style="color:black">53 - RCF Ve&iacute;culos</p>
+</td><td>
+<p>Data proposta</p>
+</td><td>
+<p style="color:black">26/10/2017</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ap&oacute;lice Central de B&ocirc;nus</p>
+</td><td>
+<p style="color:black">N/I</p>
+</td><td>
+<p>Data emiss&atilde;o</p>
+</td><td>
+<p style="color:black">26/10/2017</p>
+</td>
+</tr>
+</table>
+<table id="apolice2" class="table">
+<tr>
+<td>
+<p>Endosso</p>
+</td><td>
+<p style="color:black;">0000000000032423423432.666</p>
+</td>
+</tr>
+</table>
+<div>
+<p id="datosPersonalesParrafo2">Segurado/Proponte</p>
+</div>
+<table id="SeguradoProponte" class="table">
+<tr>
+<td>
+<p>Nome</p>
+</td><td>
+<p style="color:black;">Verônica Chiderski</p>
+</td><td>
+<p style="">Sexo</p>
+</td><td>
+<p style="color:black;">F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Estado civil</p>
+</td><td>
+<p style="color:black;">Solteiro</p>
+</td><td>
+<p style="">Tipo de pessoa</p>
+</td><td>
+<p style="color:black;">F&iacute;sica</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Telefone fixo</p>
+</td><td>
+<p style="color:black;">(11) 9241-7329</p>
+</td><td>
+<p style="">Telefone celular</p>
+</td><td>
+<p style="color:black;">1192417328</p>
+</td>
+</tr>
+<table id="SeguradoProponte2" class="table">
+<tr>
+<td>
+<p>Email</p>
+</td><td>
+<p style="color:black;">veronica.chiderski@qactions.com</p>
+</td>
+</tr>
+</table>
+</table>
+<table id="SeguradoProponte3" class="table">
+<tr>
+<td>
+<p>CPF/CNPJ</p>
+</td><td>
+<p style="color:black;">531.782.745-02</p>
+</td><td>
+<p>Endere&ccedil;o</p>
+</td><td>
+<p style="color:black;">Av. Alphaville</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>N&uacute;mero</p>
+</td><td>
+<p style="color:black;">799</p>
+</td><td>
+<p>Complemento</p>
+</td><td>
+<p style="color:black;">N/I</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CEP</p>
+</td><td>
+<p style="color:black;">06472-010</p>
+</td><td>
+<p>UF</p>
+</td><td>
+<p style="color:black;">SP</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bairro</p>
+</td><td>
+<p style="color:black;">Empresarial 18 do Forte</p>
+</td><td>
+<p>Cidade</p>
+</td><td>
+<p style="color:black;">Barueri</p>
+</td>
+</tr>
+</table>
+<div>
+<p id="datosPersonalesParrafo2">CORRETOR</p>
+</div>
+<table id="corretor" class="table">
+<tr>
+<td>
+<p>Nome</p>
+</td><td>
+<p style="color:black;">UNICOOB CORRETORA DE SEGUROS LTDA</p>
+</td>
+</tr>
+</table>
+<table id="corretor2" class="table">
+<tr>
+<td>
+<p>Registro Susep</p>
+</td><td>
+<p style="color:black;">100562670</p>
+</td><td>
+<p>Telefone</p>
+</td><td>
+<p style="color:black;">(21) 3555-8164</p>
+</td>
+</tr>
+</table>
+<div>
+<p id="datosPersonalesParrafo2">DADOS DO SEGURO</p>
+</div>
+<table id="corretor" class="table">
+<tr>
+<td>
+<p>Tabela de refer&ecirc;ncia</p>
+</td><td>
+<p style="color:black;">FIPE</p>
+</td><td>
+<p>Tabela substituta</p>
+</td><td>
+<p style="color:black;">MOLICAR</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Juros (%)</p>
+</td><td>
+<p style="color:black;">20,73</p>
+</td><td>
+<p>Periodicidade de faturamento</p>
+</td><td>
+<p style="color:black;">N/I</p>
+</td>
+</tr>
+</table>
+<table id="corretor2" class="table">
+<tr>
+<td>
+<p>Itens segurados</p>
+</td><td>
+<p style="color:black;">1</p>
+</td>
+</tr>
+</table>
+<table id="corretor3" class="table">
+<tr>
+<td>
+<p>Vig&ecirc;ncia ap&oacute;lice<br>
+</p>
+</td><td>
+<p style="color:black;">Das 24 horas de 26/10/2017 até às 24 horas de 25/10/2018</p>
+</td>
+</tr>
+</table>
+<table id="corretor4" class="table">
+<tr>
+<td>
+<p>Vig&ecirc;ncia endosso</p>
+</td><td>
+<p style="color:black;">Das 24 horas de 26/10/2017 até às 24 horas de 25/10/2018</p>
+</td>
+</tr>
+</table>
+<table id="corretor5" class="table">
+<tr>
+<td>
+<p>Pr&ecirc;mio l&iacute;quido</p>
+</td><td>
+<p style="color:black;">R$10.569,00</p>
+</td><td>
+<p>Adicional de fracionamento</p>
+</td><td>
+<p style="color:black;">20,73</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IOF</p>
+</td><td>
+<p style="color:black;">R$0,00</p>
+</td><td>
+<p>Pr&ecirc;mio total</p>
+</td><td>
+<p style="color:black;">R$10.569,00</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Forma de pagamento</p>
+</td><td>
+<p style="color:black;">&nbsp;- </p>
+</td><td>
+<p>N/A</p>
+</td><td>
+<p style="color:black;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>N/I</p>
+</td><td>
+<p style="color:black;">N/A</p>
+</td><td>
+<p>N&deg; de parcelas</p>
+</td><td>
+<p style="color:black;">10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pr&ecirc;mio 1 parcela</p>
+</td><td>
+<p style="color:black;">R$1.276,00</p>
+</td><td>
+<p>Pr&ecirc;mio das demais parcelas</p>
+</td><td>
+<p style="color:black;">R$1.056,90</p>
+</td>
+</tr>
+<table class="table">
+<tr>
+<td style="text-align:right;"><a id="a1" class="texto3" href="Apolice_0000000000032423423432.pdf" download="Recibo_02435681.pdf"><button type="button" class="btn btn-md btn-danger">Baixar PDF</button></a></td>
+</tr>
+</table>
+</table>
+</div>
+<div class="row" style="margin: 1px">
+<!--
+<div style="background-color: #E3E2E2; height: 243px;" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="publicidadSancor">
+<img id="publicidad" class="img-responsive" src="http://soapros.pe/wp-content/uploads/2016/04/soa-profesionals.png">
+</div>
+-->
+<div id="publicidadSancor">
+<a href="https://clubedevantagens.bradescoseguros.com.br/meu-local" target="_blank"><img id="publicidad" class="img-responsive" src="{% static 'demos/Bradesco/img/club.png' %}"></a>
+</div>
+
+
+</div>
+</div>
+</div>
+<div id="bienvenida">
+<embed src="{% static 'site/pdf/PE042001_001.pdf' %}" style="width:800px; height:700px;" frameborder="0"></embed>
+</div>
+<div id="poliza">
+<embed src="{% static 'site/pdf/VE040201_001.pdf' %}" style="width:800px; height:700px;" frameborder="0"></embed>
+</div>
+<div id="tarjetaAutomotor">
+<embed src="{% static 'site/pdf/VE050201_001.pdf' %}" style="width:800px; height:700px;" frameborder="0"></embed>
+</div>
+<div id="contactanos" style="height:700px;">
+<table class="table text-center tableContacto">
+<tr>
+<th colspan="3" style="border-top: 0px">
+<p style="color:#D92031">SOA PROS</p>
+<hr>
+</th>
+</tr>
+<tr>
+<td><span class="glyphicon glyphicon-home"></span>
+<p>Nuestra ubicacion</p>
+</td><td><span class="glyphicon glyphicon-envelope"></span>
+<p>Envianos un correo</p>
+</td><td><span class="glyphicon glyphicon-earphone"></span>
+<p>Telefonos</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calle Santander 186, Of. 401</p>
+<p>Alt. cuadra 39 de la Av. Arequipa</p>
+<p>Miraflores Lima, Lima-Per&uacute; 15074</p>
+</td><td>
+<p>eventos@soapros.pe</p>
+</td><td>
+<p>(511)421-4197</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script><script>
+	var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'TTgdof8Z6Kw',
+		playerVars : {
+            autoplay : 0
+		},
+		events: {
+		'onReady': onPlayerReady
+		}
+        });
+      }
+ function onPlayerReady(event) {
+    event.target.mute();
+	// Activa el audio del video de youtube cuando el mouse este encima del video
+	$('.videoAutoPlay').mouseover(function(){
+	player.unMute();
+	});
+	// Desactiva el audio del video de youtube cuando el mouse este fuera del frame
+	$('.videoAutoPlay').mouseout(function(){
+    player.mute();
+	});
+
+	// Ejecuta el video cuando el scroll se esta acercando a la posicion de donde esta el video
+	$(document).scroll(function() {
+	if( $(document).scrollTop() > $("#player").offset().top - 270 && $(document).scrollTop() < $("#player").offset().top - 130) {
+		player.playVideo();
+
+	}else{
+        player.pauseVideo();
+	}
+	});
+}
+function General(){
+	// Coloca atributos al boton
+	$("#btnGeneral").addClass("botonSeleccionado");
+	// Remueve atributos al boton
+	$("#btnGeneral").removeClass("botonNoSeleccionado");
+
+	$("#btnCartaBienvenida").addClass("botonNoSeleccionado");
+	$("#btnCartaBienvenida").removeClass("botonSeleccionado");
+
+	$("#btnPoliza").addClass("botonNoSeleccionado");
+	$("#btnPoliza").removeClass("botonSeleccionado");
+
+	$("#btnCartaVerde").addClass("botonNoSeleccionado");
+	$("#btnCartaVerde").removeClass("botonSeleccionado");
+
+	$("#btnContactanos").addClass("botonNoSeleccionado");
+	$("#btnContactanos").removeClass("botonSeleccionado");
+
+	// Cuando se le hace click al boton General mostrara la informacion correspondiente a general
+	$("#general").css("display","block");
+	// Oculta la información que esta contenida en el DIV con ID informacion
+	$("#bienvenida").css("display","none");
+	$("#poliza").css("display","none");
+	$("#tarjetaAutomotor").css("display","none");
+	$("#contactanos").css("display","none");
+
+}
+
+function cartabienvenida(){
+	$("#btnCartaBienvenida").addClass("botonSeleccionado");
+	$("#btnCartaBienvenida").removeClass("botonNoSeleccionado");
+
+	$("#btnGeneral").addClass("botonNoSeleccionado");
+	$("#btnGeneral").removeClass("botonSeleccionado");
+
+	$("#btnPoliza").addClass("botonNoSeleccionado");
+	$("#btnPoliza").removeClass("botonSeleccionado");
+
+	$("#btnCartaVerde").addClass("botonNoSeleccionado");
+	$("#btnCartaVerde").removeClass("botonSeleccionado");
+
+	$("#btnContactanos").addClass("botonNoSeleccionado");
+	$("#btnContactanos").removeClass("botonSeleccionado");
+
+	$("#bienvenida").css("display","block");
+	$("#general").css("display","none");
+	$("#poliza").css("display","none");
+	$("#tarjetaAutomotor").css("display","none");
+	$("#contactanos").css("display","none");
+}
+
+function poliza(){
+	$("#btnPoliza").addClass("botonSeleccionado");
+	$("#btnPoliza").removeClass("botonNoSeleccionado");
+
+	$("#btnGeneral").addClass("botonNoSeleccionado");
+	$("#btnGeneral").removeClass("botonSeleccionado");
+
+	$("#btnCartaBienvenida").addClass("botonNoSeleccionado");
+	$("#btnCartaBienvenida").removeClass("botonSeleccionado");
+
+	$("#btnCartaVerde").addClass("botonNoSeleccionado");
+	$("#btnCartaVerde").removeClass("botonSeleccionado");
+
+	$("#btnContactanos").addClass("botonNoSeleccionado");
+	$("#btnContactanos").removeClass("botonSeleccionado");
+
+	$("#poliza").css("display","block");
+	$("#general").css("display","none");
+	$("#bienvenida").css("display","none");
+	$("#tarjetaAutomotor").css("display","none");
+	$("#contactanos").css("display","none");
+}
+
+function cartaVerde(){
+	$("#btnCartaVerde").addClass("botonSeleccionado");
+	$("#btnCartaVerde").removeClass("botonNoSeleccionado");
+
+	$("#btnPoliza").addClass("botonNoSeleccionado");
+	$("#btnPoliza").removeClass("botonSeleccionado");
+
+	$("#btnGeneral").addClass("botonNoSeleccionado");
+	$("#btnGeneral").removeClass("botonSeleccionado");
+
+	$("#btnCartaBienvenida").addClass("botonNoSeleccionado");
+	$("#btnCartaBienvenida").removeClass("botonSeleccionado");
+
+	$("#btnContactanos").addClass("botonNoSeleccionado");
+	$("#btnContactanos").removeClass("botonSeleccionado");
+
+	$("#tarjetaAutomotor").css("display","block");
+	$("#bienvenida").css("display","none");
+	$("#general").css("display","none");
+	$("#poliza").css("display","none");
+	$("#contactanos").css("display","none");
+}
+
+function contactanos(){
+	$("#btnContactanos").addClass("botonSeleccionado");
+	$("#btnContactanos").removeClass("botonNoSeleccionado");
+
+	$("#btnPoliza").addClass("botonNoSeleccionado");
+	$("#btnPoliza").removeClass("botonSeleccionado");
+
+	$("#btnGeneral").addClass("botonNoSeleccionado");
+	$("#btnGeneral").removeClass("botonSeleccionado");
+
+	$("#btnCartaBienvenida").addClass("botonNoSeleccionado");
+	$("#btnCartaBienvenida").removeClass("botonSeleccionado");
+
+	$("#btnCartaVerde").addClass("botonNoSeleccionado");
+	$("#btnCartaVerde").removeClass("botonSeleccionado");
+
+	$("#contactanos").css("display","block");
+	$("#tarjetaAutomotor").css("display","none");
+	$("#bienvenida").css("display","none");
+	$("#general").css("display","none");
+	$("#poliza").css("display","none");
+}
+				</script>
+</html>

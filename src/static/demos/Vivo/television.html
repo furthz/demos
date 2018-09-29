@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Claro</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+
+	<div class="navbar navbar-right" id="menu-principal">
+            <ul class="nav navbar-nav p-3">
+                <li class="nav-item btn1"><a href="index.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn2"><a href="telefonia.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn3"><a href="#"><span class="iconav"></span></a></li>
+                <li class="nav-item btn4 active"><a href="television.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn5"><a href="internet.html"><span class="iconav"></span></a></li>
+            	<li class="nav-item btn7"><a href="#"><span class="iconav"></span></a></li>
+                <li class="nav-item btn6 sinborde"><a href="pagos.html"><span class="iconav"></span></a></li>
+            </ul>
+    </div><!--/.nav -->
+
+    
+    <div class="container-fluid">
+        <div class="row">
+        <!--Columna izquierda -->
+            <div class="col-lg-5 col-md-12">
+                <div class="row">
+                   <div class="p-3 bgwhite cuadrologoint w-100">
+                   <div class="row">
+                        <div class="col-md-3 col-sm-3"><img src="img/logo-vivo.png" alt="Claro" class="logo"></div>
+                        <div class="col-md-9 col-sm-9"><h1>Televisión</h1>
+                    </div>
+                    <div class="row w-100 pl-3">
+                    	<div class="col-md-12">
+                    	<table width="100%" border="0">
+                          <tr class="txtrojo1">
+                            <td width="27%">&nbsp;</td>
+                            <td width="38%">TOTAL TELEVISIÓN</td>
+                            <td width="35%" id="">$ 96.948</td>
+                          </tr>
+                          <tr class="txtrojo2">
+                            <td>&nbsp;</td>
+                            <td>TOTAL OTROS</td>
+                            <td id="">$ 8.403</td>
+                          </tr>
+                          <tr class="txtrojo3">
+                            <td>&nbsp;</td>
+                            <td>TOTAL IMPUESTOS</td>
+                            <td id="">$20.017</td>
+                          </tr>
+                          <tr class="total">
+                            <td>&nbsp;</td>
+                            <td>TOTAL A PAGAR:</td>
+                            <td id="">$125.368</td>
+                          </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+                   </div>
+               </div>
+            </div>
+            
+        <!--Columna Derecha --> 
+       		<div class="col-lg-7 col-md-12">
+          <div class="row chartint">
+          	<!-- Charts -->
+            <div class="col-md-12"><h1>Consumo Mensual servicios PPV</h1></div>
+            <div class="col-lg-10 col-md-9 no-gutters">
+            	<canvas id="telefoniaChart"></canvas>
+            </div>
+            <div class="col-lg-2 col-md-3 no-gutters">
+            	<a href="#" class="leyenda">LECTURA ANTERIOR:<br>117497</a>
+                <a href="#" class="leyenda">LECTURA ACTUAL:<br>119606</a>
+                <a href="#" class="leyenda">CONSUMO ACTUAL:<br>3660</a>
+                <a href="#" class="leyenda active">PROMEDIO:<br>3660</a>
+            </div>
+            
+            
+          </div>
+            
+            
+            
+            </div>
+        </div>
+        
+        
+        <div class="row m-1 mt-3">
+	        <div class="col-md-12 boxheader tab5">CONSUMOS TOTALES TELEVISIÓN</div>
+            <div class="col-md-12 boxbody bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr>
+                    <th width="3.5%">Ítem</th>
+                    <th width="6.5%">Código</th>
+                    <th width="20%">Detalle</th>
+                    <th width="6%">Cantidad</th>
+                    <th width="5%">Líneas</th>
+                    <th width="9%">Minutos<br>Plan Elegido</th>
+                    <th width="9%">Valor<br>Plan Elegido</th>
+                    <th width="9%">Minutos<br>Adicionales</th>
+                    <th width="9%">Consumos<br>Adicionales</th>
+                    <th width="8%">Desde</th>
+                    <th width="8%">Hasta</th>
+                    <th width="9%">Total</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>FSV0001 </td>
+                    <td>Cargo Mensual Voz Publica Local </td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>Ilimitado</td>
+                    <td>$ 250,000.00</td>
+                    <td>0</td>
+                    <td>$ 0.00</td>
+                    <td>01/02/2017</td>
+                    <td>28/02/2017 </td>
+                    <td>$ 250,000.0</td>
+                  </tr>
+                </table>
+                <div class="row bordeado">
+                    <div class="col-lg-6 col-md-3">&nbsp;</div>
+                    <div class="casitabla col-lg-2 col-md-3">TOTAL CARGOS <span id="">$250,000.00</span></div>
+                    <div class="casitabla col-lg-2 col-md-3">TOTAL IVA <span id="">$47,500.00</span></div>
+                    <div class="casitabla col-lg-2 col-md-3">RECARGO MORA <span id="">$0.00</span></div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">&nbsp;</div>
+            <div class="col-lg-4 col-md-6 boxfooter">TOTAL TELEVISIÓN <span id="">$297,500.00</span></div>
+        </div>
+        
+        <div class="row m-1 mt-4">
+	        <div class="col-md-12 boxheader tab4">RELACION CONSUMOS ADICIONALES PELÍCULAS TV</div>
+            <div class="col-md-12 boxbody bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr>
+                    <th width="28%">Descripción</th>
+                    <th width="18%">Fecha</th>
+                    <th width="18%">Hora</th>
+                    <th width="18%">Evento</th>
+                    <th width="18%">Valor</th>
+                  </tr>
+                    <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$183,20</td>
+                  </tr>
+                      <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$91,60</td>
+                  </tr>
+                      <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$183,20</td>
+                  </tr>
+                      <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$91,60</td>
+                  </tr>
+                      <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$183,20</td>
+                  </tr>
+                      <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$91,60</td>
+                  </tr>
+                      <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$183,20</td>
+                  </tr>
+                      <tr>
+                    <td>A LA CARTA 668</td>
+                    <td>06-Mar-18</td>
+                    <td>17:49:08</td>
+                    <td>PPV</td>
+                    <td>$91,60</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="col-lg-8 col-md-6">&nbsp;</div>
+            <div class="col-lg-4 col-md-6 boxfooter">SUBTOTAL FIJO MOVIL <span id="">$297,500.00</span></div>
+        </div>
+        
+        
+    </div>
+
+    
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    
+    <script>
+	var ctx = document.getElementById("telefoniaChart").getContext('2d');
+	var myChart = new Chart(ctx, {
+    type: 'bar',
+	data: {
+        labels: ["AGO", "SEP", "OCT", "NOV", "DIC", "ENE", "FEB"],
+        datasets: [{
+                label: "Tag",
+				backgroundColor: "rgba(144,45,194,0.6)",
+                data: [450, 2400, 3300, 1600, 2800, 2000, 4000, {value: 900}],
+          		  }],
+    },
+	
+	options: {
+        responsive: true,
+		
+		legend: {
+                display: false,
+                position: 'top',
+                labels: { fontColor: '#9b3ccf' }
+            },
+		
+		scales: {
+            yAxes: [{
+				gridLines:{
+						  color:"rgba(105,16,161,0.4)",
+						  zeroLineColor:"rgba(105,16,161,0.4)"
+						},
+				ticks: {
+					fontColor: '#9b3ccf',
+					beginAtZero: true,
+					stepSize: 900
+						}		
+           		 }],
+			xAxes: [{
+				gridLines:{
+						  display: false,
+						},
+				ticks: {fontColor: '#9b3ccf'}
+           		 }],
+		}
+		
+    }    
+});
+	</script>
+    
+  </body>
+</html>

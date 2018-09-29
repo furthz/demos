@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vivo</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+
+	<div class="navbar navbar-right" id="menu-principal">
+            <ul class="nav navbar-nav p-3">
+                <li class="nav-item btn1"><a href="index.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn2 active"><a href="telefonia.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn3"><a href="#"><span class="iconav"></span></a></li>
+                <li class="nav-item btn4"><a href="television.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn5"><a href="internet.html"><span class="iconav"></span></a></li>
+            	<li class="nav-item btn7"><a href="#"><span class="iconav"></span></a></li>
+                <li class="nav-item btn6 sinborde"><a href="pagos.html"><span class="iconav"></span></a></li>
+            </ul>
+    </div><!--/.nav -->
+
+    
+    <div class="container-fluid">
+        <div class="row">
+        <!--Columna izquierda -->
+            <div class="col-lg-5 col-md-12">
+                <div class="row">
+                   <div class="p-3 bgwhite cuadrologoint w-100">
+                   <div class="row">
+                        <div class="col-md-3 col-sm-3"><img src="img/logo-vivo.png" alt="Claro" class="logo"></div>
+                        <div class="col-md-9 col-sm-9"><h1>Telefonia Móvel</h1>
+                    </div>
+                    <div class="row w-100 pl-3">
+                    	<div class="col-md-12">
+                    	<table width="100%" border="0">
+                          <tr class="txtrojo1">
+                            <td width="27%">&nbsp;</td>
+                            <td width="38%">TOTAL TELEFONÍA</td>
+                            <td width="35%">$ 22.845</td>
+                          </tr>
+                          <tr class="txtrojo2">
+                            <td>&nbsp;</td>
+                            <td>TOTAL OTROS</td>
+                            <td>$ 17.821</td>
+                          </tr>
+                          <tr class="txtrojo3">
+                            <td>&nbsp;</td>
+                            <td>TOTAL IMPUESTOS</td>
+                            <td>$ 7.718</td>
+                          </tr>
+                          <tr class="total">
+                            <td>&nbsp;</td>
+                            <td>TOTAL A PAGAR:</td>
+                            <td>$ 48.384</td>
+                          </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+                   </div>
+               </div>
+            </div>
+            
+        <!--Columna Derecha --> 
+       		<div class="col-lg-7 col-md-12">
+          <div class="row chartint">
+          	<!-- Charts -->
+            <div class="col-md-12"><h1>Comparativo Plan VS Consumo Real</h1></div>
+            <div class="col-lg-10 col-md-9 no-gutters">
+            	<canvas id="telefoniaChart"></canvas>
+            </div>
+            <div class="col-lg-2 col-md-3 no-gutters">
+            	<a href="#" class="leyenda">LECTURA ANTERIOR:<br>224</a>
+                <a href="#" class="leyenda">LECTURA ACTUAL:<br>224</a>
+                <a href="#" class="leyenda">CONSUMO ACTUAL:<br>153</a>
+                <a href="#" class="leyenda active">PROMEDIO:<br>153</a>
+            </div>
+            
+            
+          </div>
+            
+            
+            
+            </div>
+        </div>
+        
+        
+       <!-- <div class="row m-1 mt-3">
+	        <div class="col-md-12 boxheader tab5">CONCEPTOS DE TELMEX COLOMBIA S.A. - TELEFONIA PÚBLICA LOCAL</div>
+            <div class="col-md-12 boxbody bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr>
+                    <th width="3.5%">Ítem</th>
+                    <th width="6.5%">Código</th>
+                    <th width="20%">Detalle</th>
+                    <th width="6%">Cantidad</th>
+                    <th width="5%">Líneas</th>
+                    <th width="9%">Minutos<br>Plan Elegido</th>
+                    <th width="9%">Valor<br>Plan Elegido</th>
+                    <th width="9%">Minutos<br>Adicionales</th>
+                    <th width="9%">Consumos<br>Adicionales</th>
+                    <th width="8%">Desde</th>
+                    <th width="8%">Hasta</th>
+                    <th width="9%">Total</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>FSV0001 </td>
+                    <td>Cargo Mensual Voz Publica Local </td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>Ilimitado</td>
+                    <td>$ 250,000.00</td>
+                    <td>0</td>
+                    <td>$ 0.00</td>
+                    <td>01/02/2017</td>
+                    <td>28/02/2017 </td>
+                    <td>$ 250,000.0</td>
+                  </tr>
+                </table>
+                <div class="row bordeado">
+                    <div class="col-lg-6 col-md-3">&nbsp;</div>
+                    <div class="casitabla col-lg-2 col-md-3">TOTAL CARGOS <span id="">$250,000.00</span></div>
+                    <div class="casitabla col-lg-2 col-md-3">TOTAL IVA <span id="">$47,500.00</span></div>
+                    <div class="casitabla col-lg-2 col-md-3">RECARGO MORA <span id="">$0.00</span></div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">&nbsp;</div>
+            <div class="col-lg-4 col-md-6 boxfooter">TOTAL TELEFONÍA <span id="">$297,500.00</span></div>
+        </div> -->
+        
+       <!-- <div class="row m-1 mt-3">
+	        <div class="col-md-12 boxheader tab4">TOTAL CONSUMOS POR SERVICIO</div>
+            <div class="col-md-12 boxbody bradius-bottom bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr>
+                    <th width="3.5%">Ítem</th>
+                    <th width="6.5%">Código</th>
+                    <th width="19%">Detalle</th>
+                    <th width="5%">Línea</th>
+                    <th width="7%">Valor<br />del Plan</th>
+                    <th width="11%">Valor del minuto<br />del Plan</th>
+                    <th width="11%">Valor del Minuto<br />Adicional</th>
+                    <th width="24%">Estrato</th>
+                    <th width="13%">Números de Telefóno<br />Facturados</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>FSV0001 </td>
+                    <td>Cargo Mensual Voz Publica Local </td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>Industria Comercio y Servicios estrato 5 y 6</td>
+                    <td>53853826</td>
+                  </tr>
+                </table>
+            </div>
+        </div>-->
+        
+        <div class="row m-1 mt-4">
+	        <div class="col-md-12 boxheader tab5">
+                  <div class="form-inline">
+                  	<div class="col-md-8"><label for="exampleInputName2" style="justify-content: left;">DETALLE CONSUMOS LD, MÓVILES Y ALIANZAS (CLOUD)</label></div>
+                    <div class="col-md-4">
+                    <input type="text" class="form-control" id="" >
+                  <button type="submit" class="btn btn-default text-right">Filtrar</button>
+                  	</div>
+                   </div>
+            </div>
+            <div class="col-md-12 boxbody bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr><strong>Colombia Móvil S.A. E.S.P. NIT 803.114.921-0 TIGO FMC</strong></tr>
+				  <div style="justify-content: left;"><strong>Tel. Origen 23702458</strong></div>
+		          <div class="col-lg-8 col-md-6">&nbsp;</div>
+				  <tr>
+                    <th width="17%">Fecha</th>
+                    <th width="10%">Hora</th>
+                    <th width="17%">Número Marcado</th>
+                    <th width="17%">Descripción</th>
+                    <th width="11%">Duración</th>
+                    <th width="11%">Tarifa</th>
+                    <th width="17%">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>16-Feb-18</td>
+                    <td>10:29:47</td>
+                    <td>3117144503</td>
+                    <td>MOVIL</td>
+                    <td>0003:00</td>
+                    <td>$74,18</td>
+                    <td>$222,54</td>
+                  </tr>
+                  <tr>
+                    <td>05-Mar-18</td>
+                    <td>15:41:40</td>
+                    <td>3017920799</td>
+                    <td>MOVIL</td>
+                    <td>0001:00</td>
+                    <td>$74,18</td>
+                    <td>$74,18</td>
+                  </tr>
+                  <tr>
+                    <td>08-Mar-18</td>
+                    <td>14:27:13</td>
+                    <td>3017920799</td>
+                    <td>MOVIL</td>
+                    <td>0007:00</td>
+                    <td>$74,18</td>
+                    <td>$519,26</td>
+                  </tr>
+                  <tr>
+                    <td>08-Mar-18</td>
+                    <td>14:44:35</td>
+                    <td>3158388795</td>
+                    <td>MOVIL</td>
+                    <td>0005:00</td>
+                    <td>$74,18</td>
+                    <td>$370,90</td>
+                  </tr>
+                  <tr>
+                    <td>09-Mar-18</td>
+                    <td>15:43:02</td>
+                    <td>3017920799</td>
+                    <td>MOVIL</td>
+                    <td>0002:00</td>
+                    <td>$74,18</td>
+                    <td>$148,36</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="col-lg-8 col-md-6">&nbsp;</div>
+            <div class="col-lg-4 col-md-6 boxfooter">SUBTOTAL COLOMBIA MOVIL FMC <span id="">$1.335,24</span></div>
+			<div class="col-lg-8 col-md-6">&nbsp;</div>
+			
+<div class="col-md-12 boxbody bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr><strong>CONCEPTOS DE TELMEX COLOMBIA S.A. - TELEFONIA PÚBLICA LOCAL</strong></tr>
+				  <div style="justify-content: left;"><strong>Tel. Origen 23702458</strong></div>
+				  <div class="col-lg-8 col-md-6">&nbsp;</div>
+				  <tr>
+                    <th width="17%">Fecha</th>
+                    <th width="10%">Hora</th>
+                    <th width="17%">Número Marcado</th>
+                    <th width="17%">Descripción</th>
+                    <th width="11%">Duración</th>
+                    <th width="11%">Tarifa</th>
+                    <th width="17%">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>27-Feb-18</td>
+                    <td>21:10:29</td>
+                    <td>3216173553</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0026:00</td>
+                    <td>$91,60</td>
+                    <td>$2.381,60</td>
+                  </tr>
+                  <tr>
+                    <td>28-Feb-18</td>
+                    <td>08:49:40</td>
+                    <td>3113591606</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0030:00</td>
+                    <td>$91,60</td>
+                    <td>$2.748,00</td>
+                  </tr>
+                  <tr>
+                    <td>28-Feb-18</td>
+                    <td>09:19:40</td>
+                    <td>3113591606</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0021:00</td>
+                    <td>$91,60</td>
+                    <td>$1.923,60</td>
+                  </tr>
+                  <tr>
+                    <td>28-Feb-18</td>
+                    <td>12:58:01</td>
+                    <td>3206213211</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0001:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>01-Mar-18</td>
+                    <td>12:26:20</td>
+                    <td>3206213211</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0001:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>01-Mar-18</td>
+                    <td>14:14:24</td>
+                    <td>3127213960</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0001:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>01-Mar-18</td>
+                    <td>14:15:48</td>
+                    <td>3126213211</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0001:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>01-Mar-18</td>
+                    <td>14:16:45</td>
+                    <td>3126213211</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0001:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>01-Mar-18</td>
+                    <td>14:29:39</td>
+                    <td>3126213211</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0001:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>09-Mar-18</td>
+                    <td>12:56:26</td>
+                    <td>3182973429</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0002:00</td>
+                    <td>$91,60</td>
+                    <td>$183,20</td>
+                  </tr>
+                  <tr>
+                    <td>14-Mar-18</td>
+                    <td>20:21:19</td>
+                    <td>3154342569</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0002:00</td>
+                    <td>$91,60</td>
+                    <td>$183,20</td>
+                  </tr>
+                  <tr>
+                    <td>14-Mar-18</td>
+                    <td>20:27:46</td>
+                    <td>3117988055</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0002:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>15-Mar-18</td>
+                    <td>14:27:09</td>
+                    <td>3117988055</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0002:00</td>
+                    <td>$91,60</td>
+                    <td>$91,60</td>
+                  </tr>
+                  <tr>
+                    <td>16-Mar-18</td>
+                    <td>23:51:39</td>
+                    <td>3126323849</td>
+                    <td>FIJO-MOVIL</td>
+                    <td>0007:00</td>
+                    <td>$91,60</td>
+                    <td>$1.557,20</td>
+                  </tr>				  
+                </table>
+            </div>
+            <div class="col-lg-8 col-md-6">&nbsp;</div>
+            <div class="col-lg-4 col-md-6 boxfooter">SUBTOTAL FIJO MOVIL <span id="">$9.709,60</span></div>
+			<div class="col-lg-8 col-md-6">&nbsp;</div>
+		
+            <div class="col-md-12 boxbody bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr><strong>Contact Center Américas S.A. NIT 830.126.395-7 SERVICIO 113 CON</strong></tr>
+				  <div style="justify-content: left;"><strong>Tel. Origen 23702458</strong></div>
+				  <div class="col-lg-8 col-md-6">&nbsp;</div>
+				  <tr>
+                    <th width="17%">Fecha</th>
+                    <th width="10%">Hora</th>
+                    <th width="17%">Número Marcado</th>
+                    <th width="17%">Descripción</th>
+                    <th width="11%">Duración</th>
+                    <th width="11%">Tarifa</th>
+                    <th width="17%">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>19-Feb-18</td>
+                    <td>04:20:56</td>
+                    <td>113</td>
+                    <td></td>
+                    <td>0001:00</td>
+                    <td>$0,00</td>
+                    <td>$0,00</td>
+                  </tr>
+                  <tr>
+                    <td>19-Feb-18</td>
+                    <td>04:20:56</td>
+                    <td>113</td>
+                    <td></td>
+                    <td>0001:00</td>
+                    <td>$0,00</td>
+                    <td>$0,00</td>
+                  </tr>
+                  <tr>
+                    <td>19-Feb-18</td>
+                    <td>04:20:56</td>
+                    <td>113</td>
+                    <td></td>
+                    <td>0001:00</td>
+                    <td>$0,00</td>
+                    <td>$0,00</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="col-lg-8 col-md-6">&nbsp;</div>
+            <div class="col-lg-4 col-md-6 boxfooter">SUBTOTAL SERVICIO 113 CON <span id="">$0,00</span></div>
+			<div class="col-lg-8 col-md-6">&nbsp;</div>
+			
+            <div class="col-md-12 boxbody bgwhite table-responsive">
+            	<table width="100%" border="0">
+                  <tr><strong>Colombia Telecomunicaciones S.A. E.S.P. NIT 830.122.566-1 TELECOM LDN</strong></tr>
+				  <div style="justify-content: left;"><strong>Tel. Origen 23702458</strong></div>
+				  <div class="col-lg-8 col-md-6">&nbsp;</div>
+				  <tr>
+                    <th width="17%">Fecha</th>
+                    <th width="10%">Hora</th>
+                    <th width="17%">Número Marcado</th>
+                    <th width="17%">Descripción</th>
+                    <th width="11%">Duración</th>
+                    <th width="11%">Tarifa</th>
+                    <th width="17%">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>19-Feb-18</td>
+                    <td>16:29:49</td>
+                    <td>17445656</td>
+                    <td>BOGOTA D.C.</td>
+                    <td>0002:00</td>
+                    <td>$761,00</td>
+                    <td>$1.522,00</td>
+                  </tr>
+                  <tr>
+                    <td>19-Feb-18</td>
+                    <td>16:31:28</td>
+                    <td>17445656</td>
+                    <td>BOGOTA D.C.</td>
+                    <td>0002:00</td>
+                    <td>$761,00</td>
+                    <td>$1.522,00</td>
+                  </tr>
+                  <tr>
+                    <td>19-Feb-18</td>
+                    <td>16:32:51</td>
+                    <td>17445656</td>
+                    <td>BOGOTA D.C.</td>
+                    <td>0002:00</td>
+                    <td>$761,00</td>
+                    <td>$1.522,00</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="col-lg-8 col-md-6">&nbsp;</div>
+            <div class="col-lg-4 col-md-6 boxfooter">SUBTOTAL TELECOM LDN <span id="">$4.566,00</span></div>
+		
+        </div>
+        
+        
+    </div>
+
+    
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    
+    <script>
+	var ctx = document.getElementById("telefoniaChart").getContext('2d');
+	var myChart = new Chart(ctx, {
+    type: 'bar',
+	data: {
+        labels: ["SEP", "OCT", "NOV", "DIC", "ENE", "FEB", "MAR"],
+        datasets: [{
+                label: "Tag",
+				backgroundColor: "rgba(144,45,194,0.6)",
+                data: [165, 86, 126, 236, 270,34, 224, {value: 300}],
+          		  }],
+    },
+	
+	options: {
+        responsive: true,
+		
+		legend: {
+                display: false,
+                position: 'top',
+                labels: { fontColor: '#9b3ccf' }
+            },
+		
+		scales: {
+            yAxes: [{
+				gridLines:{
+						  color:"rgba(105,16,161,0.4)",
+						  zeroLineColor:"rgba(105,16,161,0.4)"
+						},
+				ticks: {
+					fontColor: '#9b3ccf',
+					beginAtZero: true,
+					stepSize: 300
+						}		
+           		 }],
+			xAxes: [{
+				gridLines:{
+						  display: false,
+						},
+				ticks: {fontColor: '#9b3ccf'}
+           		 }],
+		}
+		
+    }    
+});
+	</script>
+    
+  </body>
+</html>

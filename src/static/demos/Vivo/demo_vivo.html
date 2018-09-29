@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vivo</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+	<!-- REFERENCIA LAS SECCIONES INTERNAS -->
+	<div class="navbar navbar-right" id="menu-principal">
+            <ul class="nav navbar-nav p-3">
+                <li class="nav-item btn1 active"><a href="index.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn2"><a href="telefonia.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn3"><a href="#"><span class="iconav"></span></a></li>
+                <li class="nav-item btn4"><a href="television.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn5"><a href="internet.html"><span class="iconav"></span></a></li>
+                <li class="nav-item btn7"><a href="#"><span class="iconav"></span></a></li>
+                <li class="nav-item btn6 sinborde"><a href="pagos.html"><span class="iconav"></span></a></li>
+                
+            </ul>
+    </div><!--/.nav -->
+
+    
+    <div class="container-fluid">
+        <div class="row">
+        <!--Columna izquierda -->
+            <div class="col-lg-5 col-md-12">
+                <div class="row">
+                   <div class="margen1 p-2 bgwhite bradius-right cuadrologo">
+                   <div class="row">
+                    <div class="col-md-3 col-sm-3 no-gutters"><img src="img/logo-vivo.png" alt="Vivo" class="logo"></div>
+                    <div class="col-md-9 col-sm-9 no-gutters">
+                    	<div class="row text-right">
+                        	<div class="col-md-12">
+                        	<a class="icshowhidden" role="button" data-toggle="collapse" href="#collapseInfo1" aria-expanded="false">&nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                       	   <div class="col-md-12"><h2>SERV FED DE PROC DE DADOS</h2></div>
+                           <div class="col-md-12"><strong>Total a Pagar:</strong> <strong id="">R$ 212.031</strong></div>
+                           <div class="col-md-7 no-gutters"><strong>Periodo:</strong> <span id="">03/2018</span></div>
+                           <div class="col-md-5 no-gutters"><strong>Nº da Conta:</strong> <span id="">0309339732</span></div>
+						   
+                        </div>
+                        <div class="collapse" id="collapseInfo1">
+                          <div class="row mt-2">
+                        	<ul>
+                            <li>AV JOAO XXII, SN</li>
+                            <li>NOIVOS</li>
+                            <li>64045-000 TERESINA - PI</li>                            
+							<li>Prezado cliente, sua próxima conta chegará entre 10-15 /Mayo-18</li>
+                            </ul>
+                         </div>
+                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th scope="col" width="50%"><h4>Datos</h4></th>
+                            <th scope="col" width="50%"><h4 class="active">Detalhe</h4></th>
+                          </tr>
+                          <tr>
+                            <td>Nº da Conta:</td>
+                            <td>0309339732</td>
+                          </tr>
+                          <tr>
+                            <td>Cód. Débito Automático</td>
+                            <td>0309339732-6</td>
+                          </tr>
+                          <tr>
+                            <td>Mês Referência:</td>
+                            <td>03/2018</td>
+                          </tr>
+                          <tr>
+                            <td>Vencimento:</td>
+                            <td>25/05/2018</td>
+                          </tr>
+                        </table>
+                        
+                        </div>
+                        
+                        <div class="row mt-2 mb-2 mr-2">
+                        	<div class="col-sm-6 col-xs-6 text-left"><a class="btn btn-danger" href="#" role="button">DESCARGAR PDF</a></div>
+                            <div class="col-sm-6 col-xs-6 text-right text-center-xs"><a class="btn btn-danger" href="#" role="button">PAGAR EN LINEA</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                	</div>
+                </div>
+               <div class="row">
+                    <div class="w-100 margen1 sombra">  
+   						 <div align="center" class="embed-responsive embed-responsive-16by9">
+                           <video autoplay muted controls class="embed-responsive-item img-responsive">
+                                <source class="embed-responsive-item" src="media/novidades-do-programa.mp4" type="video/mp4" allowfullscreen>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-100 margen1 sombra"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0948618042603!2d-77.034349085635!3d-12.105658091428102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86a8c56227f%3A0xaee297947a552d4!2sSOA+Professionals+Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1527026509364" width="100%" height="268" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                </div>
+            </div>
+            
+        <!--Columna Derecha --> 
+       		<div class="col-lg-7 col-md-12">
+          <div class="row">
+          	<!-- Charts -->
+            <div class="col-md-3 no-gutters"><h1>Consumo Comparativo por Serviços</h1></div>
+            <div class="col-md-9 no-gutters"><div id="pie"></div></div>
+            
+          </div>
+            
+          <div class="row">
+            <div id="accordion" class="maintabs m-2">
+            
+            <!-- Pestaña 1 -->
+            	
+              <div class="card">
+              	
+                <div class="card-header tab1" id="">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="tabtit">TELEFONIA MÓVEL</span> <span class="tabtotal" id="">$ 48.384</span> <div class="tabicon tab1"><span class="ic1">&nbsp;</span></div></button>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabletabs">
+                  <tr>
+                    <th width="46%" scope="col">Descripción</th>
+                    <th width="14%" scope="col">Fecha Inicial</th>
+                    <th width="13%" scope="col">Fecha Final</th>
+                    <th width="5%"  scope="col">Días</th>
+                    <th width="12%" scope="col">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>CARGO FIJO TELEFONIA*</td>
+                    <td>01-Abr-18</td>
+                    <td>30-Abr-18</td>
+                    <td>30</td>
+                    <td>$ 22.845</td>
+                  </tr>
+                  <tr>
+                    <td>CARGO FIJO LD 30 MINUTOS INCLUIDOS</td>
+                    <td>01-Abr-18</td>
+                    <td>30-Abr-18</td>
+                    <td>30</td>
+                    <td>$ 2.155</td>
+                  </tr>
+                  <tr>
+                    <td>LDN TELECOM</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$ 4.566</td>
+                  </tr>
+                  <tr>
+                    <td>TIGO</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$ 1.336</td>
+                  </tr>
+                  <tr>
+                    <td>IMP NAL CONSUMO MOVIL</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$ 54</td>
+                  </tr>
+                  <tr>
+                    <td>FIJO MOVIL</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$ 9.710</td>
+                  </tr>
+                  <tr>
+                    <td>IVA</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$ 7.718</td>
+                  </tr>
+                </table>
+                    
+                  </div>
+                </div>
+              </div>
+              
+           <!-- Pestaña 2 -->
+              <!--<div class="card">
+                <div class="card-header tab2" id="">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><span class="tabtit">MÓVIL</span> <span class="tabtotal" id="">$40.789,231</span> <div class="tabicon tab2"><span class="ic2">&nbsp;</span></div></button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabletabs">
+                  <tr>
+                    <th width="47%" scope="col">Descripción</th>
+                    <th width="12%" scope="col">Fecha Inicial</th>
+                    <th width="12%" scope="col">Fecha Final</th>
+                    <th width="7%" scope="col">Días</th>
+                    <th width="12%" scope="col">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>CARGOS FIJOS MOVIL MULTIPLAY</td>
+                    <td>01-dic-16</td>
+                    <td>31-dic-16</td>
+                    <td>31</td>
+                    <td>$22,887</td>
+                  </tr>
+                  <tr>
+                    <td>SERVICIOS ADICIONALES MOVIL MULTIPLAY </td>
+                    <td>01-dic-16</td>
+                    <td>31-dic-16</td>
+                    <td>31</td>
+                    <td>$7,311</td>
+                  </tr>
+                  <tr>
+                    <td>SALDO MES ANTERIOR MULTIPLAY</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$4,861</td>
+                  </tr>
+                  <tr>
+                    <td>SALDO MES ANTERIOR MULTIPLAY</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$40,785</td>
+                  </tr>
+                  <tr>
+                    <td>IMPUESTOS*</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+                  </div>
+                </div>
+              </div> -->
+              
+           <!-- Pestaña 3 -->
+              <div class="card">
+                <div class="card-header tab3" id="">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne"><span class="tabtit">INTERNET</span>  <span class="tabtotal" id="">$ 34.779</span> <div class="tabicon tab3"><span class="ic4">&nbsp;</span></div></button>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabletabs">
+                  <tr>
+                    <th width="47%" scope="col">Descripción</th>
+                    <th width="12%" scope="col">Fecha Inicial</th>
+                    <th width="12%" scope="col">Fecha Final</th>
+                    <th width="7%" scope="col">Días</th>
+                    <th width="12%" scope="col">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>10 MEGAS</td>
+                    <td>01-Abr-18</td>
+                    <td>30-Abr-18</td>
+                    <td>30</td>
+                    <td>$ 29.226</td>
+                  </tr>
+                  <tr>
+                    <td>IVA</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$ 5.553</td>
+                  </tr>
+                </table>
+                    
+                  </div>
+                </div>
+              </div>
+                 
+           <!-- Pestaña 4 -->
+              <div class="card">
+                <div class="card-header tab4" id="">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne"><span class="tabtit">TELEVISÃO</span> <span class="tabtotal" id="">$ 125.368</span> <div class="tabicon tab4"><span class="ic3">&nbsp;</span></div></button>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                 	 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabletabs">
+                  <tr>
+                    <th width="47%" scope="col">Descripción</th>
+                    <th width="12%" scope="col">Fecha Inicial</th>
+                    <th width="12%" scope="col">Fecha Final</th>
+                    <th width="7%" scope="col">Días</th>
+                    <th width="12%" scope="col">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>CARGO FIJO DECODIFICADOR</td>
+                    <td>01-Abr-18</td>
+                    <td>30-Abr-18</td>
+                    <td>30</td>
+                    <td>$ 8.403</td>
+                  </tr>
+                  <tr>
+                    <td>CARGO FIJO TV DIGITAL SUPERIOR</td>
+                    <td>01-Abr-18</td>
+                    <td>30-Abr-18</td>
+                    <td>30</td>
+                    <td>$ 96.948</td>
+                  </tr>
+                  <tr>
+                    <td>IVA</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>$ 20.017</td>
+                  </tr>
+                </table>
+                    
+                  </div>
+                </div>
+              </div>
+              
+           <!-- Pestaña 5 -->
+              <div class="card">
+                <div class="card-header tab5" id="">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne"><span class="tabtit">OUTROS SERVIÇOS</span> <span class="tabtotal" id="">$ 3.500</span> <div class="tabicon tab5"><span class="ic5">&nbsp;</span></div></button>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabletabs">
+                  <tr>
+                    <th width="45%" scope="col">Descripción</th>
+                    <th width="15%" scope="col">Valor</th>
+                    <th width="15%" scope="col">Cuota Impuestos</th>
+                    <th width="15%" scope="col">Valor Total</th>
+                  </tr>
+                  <tr>
+                    <td>CARGO FIJO REVISTA 15 MINUTOS</td>
+                    <td>$ 3.500</td>
+                    <td>$ 0</td>
+                    <td>$ 3.500</td>
+                  </tr>
+                </table>
+                    
+                  </div>
+                </div>
+              </div> 
+           
+           <!-- Pestaña 6 -->
+              <div class="card">
+                <div class="card-header tab6" id="">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"><span class="tabtit">DÉBITO ANTERIOR</span> <span class="tabtotal" id="">$ 0</span>  <div class="tabicon tab6"><span class="ic6">&nbsp;</span></div></button>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabletabs">
+                  <tr>
+                    <th width="88%" scope="col">Descripción</th>
+                    <th width="12%" scope="col">Valor</th>
+                  </tr>
+                  <tr>
+                    <td>TOTAL FACTURA MES ANTERIOR</td>
+                    <td>$ 198.111</td>
+                  </tr>
+                  <tr>
+                    <td>PAGOS EFECTUADOS</td>
+                    <td>$ -198.111</td>
+                  </tr>
+                </table>
+                    
+                  </div>
+                </div>
+              </div>      
+              
+              
+            </div> <!-- Cierra renglón de acordeón -->
+            
+            </div>
+            
+            
+            </div>
+        </div>
+        
+        <div class="row">
+        	<div class="cuadroalerta">
+            MENSAGEM IMPORTANTE PARA VOCÊ: Desde 06 de Novembro de 2016 foi incluído o número 9 à frente dos celulares dos DDDs 41, 42, 43, 44, 45, 46, 47, 48, 49, 51, 53, 54 e 55
+						passando ao formato: (DDD)9xxxx-xxxx. Mais informações em www.vivo.com.br/9digito
+            </div>
+        </div>
+        
+        
+        <div class="row">
+        	<div class="col-lg-4 col-md-12">
+            	<div class="col-md-12 bgwhite bradiusx4 p-3 servcliente">
+                	<h3>Serviço ao cliente</h3>
+                    <p><span>Nacional</span><strong>01800 3200 200</strong></p>
+                    <p><span>CURITIBA</span><strong>750 0500</strong></p>
+                </div>
+                <div class="col-md-12 bgwhite bradiusx4 mt-3 p-3">
+                	<h3>Soluções instantaneamente!</h3>
+                    <p>Você tem alguma dúvida sobre o status da sua conta? Na Claro, estamos aqui para atendê-lo. Por favor, envie-nos uma mensagem com suas perguntas ou dúvidas. Ou se você gosta, entre em nossas redes sociais.</p>
+                    <iframe src='https://webchat.botframework.com/embed/recibo?s=PCeWItUaXkg.cwA.U_4.J_pAwuvGOlGnFGB3OfG2bZbyu7GdYQU3UTbB53C0tlk' style="width: 100%; border: 100px; height: 225px;"></iframe>
+                    <div class="row mt-4">
+                        	<div class="col-sm-6 col-xs-6 text-left"><a class="btn btn-twitter" href="#" role="button" target="_blank">&nbsp;</a> <a class="btn btn-face" href="#" role="button" target="_blank">&nbsp;</a></div>
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 bgwhite bradiusx4 p-3 oficinasatn">
+            	<h3>Oficinas de Atención</h3>
+                
+                <table width="100%" border="0">
+                      <tr>
+                        <th width="30%">CAV mas cercano a tí:</th>
+                        <th width="36%">Horarios</th>
+                        <th width="34%">Dirección</th>
+                  </tr>
+                      <tr>
+                        <td><strong>CAV CALI SANTIAGO PLAZA</strong></td>
+                        <td><strong>L-V 08:30 - 8:00 S 09:00 - 8:00 D y F 12:00 - 6:00</strong> </td>
+                        <td><strong>Cr 15 # 50-29 Lc 35 Piso 2</strong></td>
+                      </tr>
+              </table>
+
+				<p><hr></p>
+                
+                <table width="100%" border="0">
+                	<p>Conoce nuestros diferentes centros de servicio:</p>
+                  <tr>
+                    <th width="30%">CAV</th>
+                    <th width="36%">Horarios</th>
+                    <th width="34%">Dirección</th>
+                  </tr>
+                  <tr>
+                    <td>CAV CALI CHIPICHAPE</td>
+                    <td>L-V 08:30 - 8:00 S 09:00 - 8:00 D y F 12:00 - 6:00</td>
+                    <td>C.C. Chipichape Lces 230 - 231</td>
+                  </tr>
+                  <tr>
+                    <td>CAV CALI SANTIAGO PLAZA</td>
+                    <td>L-V 08:30 - 8:00 S 09:00 - 8:00 D y F 12:00 - 6:00</td>
+                    <td>Cr 15 # 50-29 Lc 35 Piso 2</td>
+                  </tr>
+                  <tr>
+                    <td>CAV CALI ROOSEVELT</td>
+                    <td>L-V 08:30 - 5:30 S 09:00 - 2:00</td>
+                    <td>Av. Roosevelt # 25-32</td>
+                  </tr>
+                </table>
+                
+            </div>
+        </div>
+        
+       <div class="row">
+		<div class="col-md-12 m-1 mt-3 text-center">
+			<div class="carousel slide sombra" id="carousel-216689">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-216689" class="active"></li>
+					<li data-slide-to="1" data-target="#carousel-216689"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+                    	<img src="img/banner-10.jpg" alt="Publicidad" class="d-block w-100" style="max-width:1281px; max-height:641px;">
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner-11.png" alt="Publicidad" class="d-block w-100" style="max-width:1281px; max-height:641px;">
+					</div>
+				</div> <a class="carousel-control-prev" href="#carousel-216689" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-216689" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+			</div>
+		</div>
+	</div>
+        
+        <div class="row">
+        	<div class="bradiusx4 bgwhite m-3 p-3">
+           	 <div class="row">
+                <div class="col-md-8 text-justify">
+                	<p><strong>“En caso de presentar una reclamación en relación con el monto facturado antes de la fecha de pago oportuno señalada en la factura, el usuario solamente deberá proceder al pago de las sumas que no sean objeto de reclamación.”</strong></p>
+                    Información Tributaria: No practicar Retención en la Fuente a título de renta, somos Autorretenedores según Resolución N°. 008339 del 24 de Agosto de 2010.
+                    
+                    <div class="collapse" id="collapseInfoLegal">Servicio de televisión exento de retención según Decreto 2775/83, somos Grandes Contribuyentes según Resolución 000041 del 30 de Enero de 2014. IVA Régimen Común, Agentes Retenedores del IVA e Industria y Comercio. Resolución DIAN para facturación electrónica No. 310000092472 del 8 de Abril de 2016 Autoriza y Habilita desde 419723421 hasta 650000000. Segmento Residencial, Actividad Económica Código CIIU 4690 Comercio al por mayor no especializado tarifa 11,04 por 1.000 - 6190 otras actividades de telecomunicaciones tarifa 9.66 x 1000. Esta factura presta merito ejecutivo, si no es cancelada se procederá a cobro jurídico.TELMEX COLOMBIA S.A. NIT 830.053.800-4 Dirección Cr 7 No. 63-44 Sede Administrativa. Licenciatario del servicio de televisión por suscripción en virtud del contrato de concesión 205 de 1.999, vigilado y regulado por la Autoridad Nacional de Televisión ANTV, Calle 59 A Bis No 5-53 de Bogotá, prestador de los servicios de valor agregado y respecto de éstos vigilado y regulado por la Superintendencia de Industria y Comercio, CR 13 No 27 – 00 de Bogotá, teléfono (57) 01 8000 910165, info@sic.gov.co. El servicio de telefonía pone a su disposición la función de Código Secreto para que usted decida qué tipo de llamadas salen desde su línea telefónica y así evite llamadas no deseadas, tenga en cuenta que si direcciona y/o realiza llamadas desde su teléfono a móviles y/o larga distancia, éstas se facturarán aparte del cobro fijo mensual de Servicios Telefonía, según tarifas establecidas por los operadores de dichos servicios. Recuerde: Los canales de televisión abierta no tienen costo, por lo que el valor de esta factura no los refleja, la revista 15 Minutos está exenta de IVA según resolución 164 de septiembre 1 de 1.999 expedida Mincultura. No entregue dinero a asesores o técnicos por concepto de ventas nuevas, cambio de servicios o instalaciones. Si sabe de algún caso por favor denúncielo al 018003200200 (Nacional). Cualquier irregularidad en su factura comunicarla a la firma Ernst and Young audit Ltda. Revisor Fiscal TELMEX COLOMBIA S.A. Al A.A. 092638 de Bogotá. Con ocasión de la promulgación de la Ley 1341 de 2009, la autoridad de inspección, vigilancia y control en materia de protección de los derechos de los usuarios de los servicios de telefonía local, larga distancia e Internet, es la Superintendencia de Industria y Comercio.
+                    <p>*El cargo Fijo del servicio de Telefonía incluye el valor del PLAN ILIMITADO de TBCL más el valor de los Servicios Suplementarios cuyo valor es de $ 10.000 más IVA. Si su servicio fue instalado antes de la fecha del periodo facturado que se indica en este documento, su factura también incluirá el valor proporcional a los días que disfrutó del servicio.</p></div>
+                </div>
+                <div class="col-md-4 text-right text-center-xs"><a role="button" data-toggle="collapse" href="#collapseInfoLegal" aria-expanded="false" aria-controls="collapseExample" class="btntxtrojo">Conoce toda la información legal <span class="icshowhiddenplus"></span></a></div>
+       		 </div>
+            </div>
+            
+        </div>
+        
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12 logofooter">
+            		<img src="img/logo-vivo.png" alt="Vivo">
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3pie.min.js"></script>
+    
+    <script>
+	var pie = new d3pie("pie", {
+		data: {
+			sortOrder: "label-dsc",
+			content: [
+				{ label: "TELEVISIÓN", value: 60 },
+				{ label: "TELEFONÍA", value: 23 },
+				{ label: "INTERNET", value: 17 },
+			]
+		},
+	});
+	
+	$('.carousel').carousel({
+	  interval: 4000
+	})
+		
+</script>
+    
+  </body>
+</html>

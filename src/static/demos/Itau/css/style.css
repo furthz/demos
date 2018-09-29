@@ -1,0 +1,189 @@
+/*Fuentes*/
+@font-face {
+	font-family: 'Conv_UniNeue-Heavy';
+	src: url('../fonts/UniNeue-Heavy.eot');
+	src: local('☺'), url('../fonts/UniNeue-Heavy.woff') format('woff'), url('../fonts/UniNeue-Heavy.ttf') format('truetype'), url('../fonts/UniNeue-Heavy.svg') format('svg');
+	font-weight: normal; font-style: normal;
+	}
+@font-face {
+	font-family: 'Conv_UniNeue-Bold';
+	src: url('../fonts/UniNeue-Bold.eot');
+	src: local('☺'), url('../fonts/UniNeue-Bold.woff') format('woff'), url('../fonts/UniNeue-Bold.ttf') format('truetype'), url('../fonts/UniNeue-Bold.svg') format('svg');
+	font-weight: normal; font-style: normal;
+	}
+@font-face {
+	font-family: 'Conv_UniNeue-Regular';
+	src: url('../fonts/UniNeue-Regular.eot');
+	src: local('☺'), url('../fonts/UniNeue-Regular.woff') format('woff'), url('../fonts/UniNeue-Regular.ttf') format('truetype'), url('../fonts/UniNeue-Regular.svg') format('svg');
+	font-weight: normal; font-style: normal;
+	}
+@font-face {
+	font-family: 'Conv_UniNeue-Book';
+	src: url('../fonts/UniNeue-Book.eot');
+	src: local('☺'), url('../fonts/UniNeue-Book.woff') format('woff'), url('../fonts/UniNeue-Book.ttf') format('truetype'), url('../fonts/UniNeue-Book.svg') format('svg');
+	font-weight: normal; font-style: normal;
+	}
+
+body {background-color:#fff; margin:0; padding:0; font-family:'Conv_UniNeue-Regular',Sans-Serif; font-size:14px; color:#4d4d4d}
+.container-fluid,.classContainer1 {width:99.5%; margin-left:2px;}
+
+.bgwhite {background-color:#FFF;}
+.bradius-right {-webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+.bradiusx4 {-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+.iso9001 {position: absolute; left: 0;}
+.logofooter {text-align:right;}
+.margen1 {margin: 5px 15px;}
+
+.bgwhite, .sombra {-webkit-box-shadow: 2px 2px 15px 5px rgba(70,70,70,0.2); box-shadow: 2px 2px 15px 5px rgba(70,70,70,0.2);}
+
+/*acordeon y tablas*/
+#accordion {width:95%; margin-left: 3% !important;}
+#accordion .card {border:0;}
+.collapsing { -webkit-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s;}
+#accordion .card {box-shadow: 0px -3px 5px #999; margin-top:-4px;}
+#accordion .card-header, #accordion .card {border:0;  -webkit-border-top-left-radius: 10px !important; -webkit-border-top-right-radius: 10px !important; -moz-border-radius-topleft: 10px !important; -moz-border-radius-topright: 10px !important; border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; width:100%; padding: 0; border-bottom:solid 20px #FFF;}
+#accordion .card-header {height:58px;}
+.card-header.tab6 {border-bottom:0 !important; height:36px !important;}
+.card-header button {cursor:pointer; width:100%; text-align:left; color:#FFF;}
+.maintabs button {cursor:pointer; font-family: 'Conv_UniNeue-Regular'; font-weight:normal; }
+.maintabs button span {display:inline-block;}
+.maintabs button span.tabtit {width:75%;}
+.maintabs button span.tabtotal {width:25%;}
+.maintabs .dropdown-toggle::after {margin-left: -72%;}
+.card-header button:hover {color:#FFF; text-decoration:none;}
+
+.tabletabs {width:97%; font-size:11px; margin:5px auto 20px}
+.tabletabs td, .tabletabs th {padding: 3px 4px; font-size:12px;}
+.tab1 {background-color:#ed9394}
+.tab2 {background-color:#ed6365}
+.tab3 {background-color:#105cb6}
+.tab4 {background-color:#ba1f22}
+.tab5 {background-color:#94191b}
+.tab6 {background-color:#700003}
+#accordion .tab1 {background-color: #ed6b00}
+#accordion .tab2 {background-color: #0b67ad} 
+#accordion .tab3 {background-color: #602c86}
+#accordion .tab4 {background-color: #af93c8}
+#accordion .tab5 {background-color: #8ac940}
+#accordion .tab6 {background-color: #efbf09}
+
+.faq-row {background-color:#656565; padding:20px 0; margin:25px -17px 15px;}
+.faq-title {color:#FFF; text-align:center; padding:10px 0 20px;}
+#FAQ .card-header button {border-radius:0; cursor:pointer; background:#999; width: 100%; color: #FFF; border-bottom:solid 4px #656565;}
+#FAQ .card-header button[aria-expanded="true"] {border-radius:0; background:#FFF; color:#999; font-family: 'Conv_UniNeue-Bold'; font-weight:normal; text-transform:uppercase; border-bottom:solid 4px #fff;}
+#FAQ .card-header, #FAQ .card {border:0; border-radius:0; padding: 0px; }
+#FAQ .card-body {padding: 10px;}
+
+.tabicon {display:block; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; width: 48px; height: 48px; position: absolute; top: -15px; right: -10px;}
+.tabicon span {display:inline-block; width: 30px; height: 30px; background: url(../img/sprite-main.png) no-repeat center center; vertical-align:middle; margin:10px;}
+span.ic1 {background-position: -0px -0px;}
+span.ic2 {background-position: -30px -0px;}
+span.ic3 {background-position: -60px -0px;}
+span.ic4 {background-position: -90px -0px;}
+span.ic5 {background-position: -120px -0px;}
+span.ic6 {background-position: -150px -0px;}
+
+/*Botones toggle*/
+.icshowhidden,.btntxtrojo .icshowhiddenplus {display: inline-block; background: url(../img/sprite-masmenos.png) no-repeat; width:30px; height:30px;}
+.icshowhidden, .icshowhidden[aria-expanded="false"] { color:#FFF; background-position: -0px -0px;}
+.icshowhidden:focus, .icshowhidden:active, .icshowhidden[aria-expanded="true"] { color:#FFF; background-position: -30px -0px;} 
+
+.btntxtrojo {font-family:'Conv_UniNeue-Heavy',Sans-Serif; font-weight:normal; font-size:16px; color:#105cb6;}
+.btntxtrojo:hover, .btntxtrojo:active, .btntxtrojo:focus {color:#105cb6; text-decoration:none}
+.btntxtrojo .icshowhiddenplus { color:#FFF; background-position: -0px -30px; padding-top:15px; vertical-align: bottom;}
+.btntxtrojo:focus .icshowhiddenplus, .btntxtrojo:active .icshowhiddenplus { color:#FFF; background-position: -30px -30px;}
+
+.btn-twitter, .btn-face {display: inline-block; background: url(../img/sprite-redes.png) no-repeat; width:40px; height:40px;}
+.btn-twitter {background-position: -0px -0px;} 
+.btn-twitter:hover {background-position: -0px -40px;} 
+.btn-face {background-position: -40px -0px;}
+.btn-face:hover {background-position: -40px -40px;}
+h1, h2, h3, h4, .cuadroalerta, .oficinasatn p, .oficinasatn th {font-family:'Conv_UniNeue-Bold',Sans-Serif; font-weight:normal;}
+h1 {color:#999; font-size:18px; letter-spacing:2px; padding:20px 0; } /*titulos en gráficas*/
+h2 {color:#000000; font-size:18px;} /*junto a logo*/
+h3 {color:#ba1f22; font-size:28px;} /*títulos rojos de recuadros*/
+.cuadrologo strong {color:#4d4d4d; font-family:'Conv_UniNeue-Heavy',Sans-Serif; font-weight:normal; font-size:16px;}
+.cuadrologo span {font-family:'Conv_UniNeue-Book',Sans-Serif; font-weight:normal; color:#4d4d4d; font-size:16px;}
+.cuadrologo .valor strong {font-size:22px; font-weight:normal;}
+.logo {width:100%; max-width:104px; height:auto; max-height:104px;}
+.cuadrologo li {font-family:'Conv_UniNeue-Bold',Sans-Serif; font-weight:normal; font-size:16px; color:#b3b3b3; list-style-type:none; margin-left: -25px;}
+.cuadrologo td {font-size:16px; color:#4d4d4d}
+.cuadrologo h4 {color:#ed9394; font-size:23px;}
+.cuadrologo h4.active {color:#105cb6;}
+.btn-danger {font-family:'Conv_UniNeue-Bold',Sans-Serif; font-weight:normal; font-size:13px; background-color: #fff; border-color: #105cb6; color:#105cb6}
+.btn-danger:hover {background-color: #105cb6; border-color: #105cb6;}
+.cuadroalerta {background-color:#105cb6; color:#FFF; font-size:18px; padding:20px 40px; margin:15px 0.8%; width:98.4%}
+.minicuadroalerta {background-color:#105cb6; color:#FFF; padding:18px 20px 6px; max-width: 97%; margin-top:30px; margin-bottom:40px; font-size:16px;}
+.minicuadroalerta h3 {color:#ba1f22; font-size:34px; line-height:36px; color:#FFF}
+.roundlupa {position: absolute; right: -13px; top: -18px;}
+textarea.form-control {background-color: #e6e6e6;}
+.oficinasatn th {font-size:20px; color:#dc8f90}
+.oficinasatn p {font-size:20px; color:#808080}
+.oficinasatn td {font-size:13px;}
+.servcliente {font-family:'Conv_UniNeue-Bold',Sans-Serif; font-weight:normal; font-size:35px; line-height:38px; color:#6e3334;}
+.servcliente span {font-size:28px; margin-right:15px;}
+.servcliente strong {font-size:25px;}
+.d-flex img:first-child {margin-right:15px;}
+.carousel.slide {width:100%; margin:30px 0; margin-right:-10px;}
+
+/*tablas bordeadas*/
+.bradius-bottom {-webkit-border-bottom-right-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
+.boxheader, .boxfooter, .boxheadersb  {color:#FFF; font-family:'Conv_UniNeue-Bold',Sans-Serif; font-weight:normal; font-size:16px; padding: 10px 20px;  word-spacing: 3px;}
+.boxheader {-webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.boxbody {padding:15px 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; border-bottom-left-radius: 10px;}
+.boxbody td, .boxbody th {border-right:solid 1px #ed9fa0; padding:0 4px 6px; text-align:center; font-size:12px; line-height:16px;}
+.pagination td, .pagination th {border-right:0;}
+.pagination {float: right; margin-top: 15px; margin-right: 20px;}
+.boxbody td:last-child, .boxbody th:last-child {border-right:0;}
+.boxbody th {text-align:center;}
+td.subtotalred {font-family:'Conv_UniNeue-Bold',Sans-Serif; font-weight:normal; color:#6e1214; font-size:13px; border-right:none; border-top:solid 1px #ed9fa0; padding:12px 0;}
+.boxfooter {background:#ed6365; -webkit-border-bottom-right-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; text-align:center}
+
+/*Gráficas*/
+.creceplan {display:block; width:180px; position: absolute; right: 0px; bottom: 26px;}
+.creceplan strong {font-family:'Conv_UniNeue-Bold',Sans-Serif; font-weight:normal; color:#ed9fa0; font-size:28px; line-height:30px}
+.btn-cp {font-family: 'Conv_UniNeue-Bold',Sans-Serif; font-weight: normal; font-size: 20px; background-color: #105cb6; color: #fff; margin-top:10px;}
+.btn-cp:hover {color:#FFF; background-color: #ba1f22;}
+
+.boxheader:after {content:"+"; position: absolute; right: 10px;}
+.boxheader[aria-expanded="true"]:after {content:"-";}
+
+@media only screen and (max-width:991px) {
+	.cuadroalerta {font-size:16px}
+	.oficinasatn {margin:20px 0 5px;}
+	.text-center-xs {text-align: left !important;}
+	.cuadrologoint {margin-bottom:20px;}
+}
+@media only screen and (max-width:767px) {
+	.boxfooter {margin-top:-22px;}
+}
+@media only screen and (max-width:640px) {
+.container-fluid,.classContainer1 {width: 100%; margin-right:0; margin-top:30px;}
+.nav {position: fixed; height:60px; width:100%; z-index:99999; }
+#menu-principal ul {display:inline;}
+#menu-principal li {display:inline-block; margin: 0 10px 0px; padding: 0px;  width: 30px; border-bottom: 0;}
+.col-xs-6 {width:50%;}
+h1 {text-align:center}
+.bradius-right, .bradiusx4 {-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+.d-flex {display: initial !important;}
+.d-flex img {width:100%; height:auto; margin:20px auto 10px;}
+#accordion { margin-left: 10px;}
+
+.maintabs button span.tabtit {width:55%;}
+.maintabs button span.tabtotal {width:45%;}
+.maintabs .dropdown-toggle::after {margin-left: -15%;}
+
+.cuadrologoint {margin:10px;}
+
+.creceplan {display:inline-block; width:100%; position: initial; right: initial; bottom: initial; padding:10%;}
+.btn-cp {display:inline-block; margin-left:20px;}
+}
+
+@media only screen and (max-width:480px) {
+.container-fluid,.classContainer1 {padding:10px;}
+.iso9001 {position: relative; margin-bottom:30px; margin-left:-15px;}
+.logofooter {text-align:center !important;}
+#menu-principal li {margin: 0 4px 0px;}
+#pie {margin-left: -70px; -ms-transform: scale(0.70, 0.70); /* IE 9 */ -webkit-transform: scale(0.70, 0.70); /* Safari */ transform: scale(0.70, 0.70)}
+.cuadrologoint tr td:first-child {width:1%}
+}
